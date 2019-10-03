@@ -531,7 +531,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1282800063}
+      - m_Target: {fileID: 5216617144621084568, guid: 0169a3d42f3e3cf49a9f56751febd48b,
+          type: 3}
         m_MethodName: CarregaIntroducao
         m_Mode: 1
         m_Arguments:
@@ -660,7 +661,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1282800063}
+      - m_Target: {fileID: 5216617144621084568, guid: 0169a3d42f3e3cf49a9f56751febd48b,
+          type: 3}
         m_MethodName: EncerrarJogo
         m_Mode: 1
         m_Arguments:
@@ -710,49 +712,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217832674}
   m_CullTransparentMesh: 0
---- !u!1 &1282800062
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1282800064}
-  - component: {fileID: 1282800063}
-  m_Layer: 0
-  m_Name: Jogo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1282800063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1282800062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cb87c9f5ca60f34697055bcbb6e9422, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1282800064
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1282800062}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 476.8083, y: 212.90414, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1311786781
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,5 +855,5 @@ Transform:
   m_LocalScale: {x: 1.7237221, y: 1.342979, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Personagem : MonoBehaviour
+public class Vilao : MonoBehaviour
 {
     public float velocidade = 4;
     public bool olhandoParaDireita = true;
@@ -18,8 +18,8 @@ public class Personagem : MonoBehaviour
     // Update is called once per frame
     void Mover()
     {
-        float horizontalForceButton = Input.GetAxis ("Horizontal");
-        rb.velocity = new Vector2 (horizontalForceButton * velocidade, rb.velocity.y);
+        float horizontalForceButton = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(horizontalForceButton * velocidade, rb.velocity.y);
     }
 
     void Update()
