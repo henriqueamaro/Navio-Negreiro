@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5216617144621084568}
   m_Layer: 0
   m_Name: Jogo
-  m_TagString: Untagged
+  m_TagString: JOGO
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,3 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cb87c9f5ca60f34697055bcbb6e9422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pontos: 0
+  pontosText: {fileID: 0}
+  vidas: 3
+  vidaText: {fileID: 0}
+  inimigo: {fileID: 3065368618997570342, guid: 3b8e6d5713994d84b94b6265181e2688, type: 3}
+  tempoCriacaoInimigo: 5
+  Algema: {fileID: 2195183262377995942, guid: 45a49f748e51d4c43a6fb9b1f109c1b1, type: 3}
+  tempoCriacaoAlgema: 5
+  Cadeado: {fileID: 2443039014688688142, guid: 7b25dc5300c87d840b8d56931820b7c2, type: 3}
+  tempoCriacaoCadeado: 5
