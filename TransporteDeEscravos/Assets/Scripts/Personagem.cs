@@ -16,11 +16,14 @@ public class Personagem : MonoBehaviour
     public Transform chaoCheck ;
     public LayerMask OQueEChao;
 
+    Animator animacao;
+
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animacao = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -55,5 +58,25 @@ public class Personagem : MonoBehaviour
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0, forcaPulo));
             Debug.Log("PULO");
         }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            animacao.SetFloat("pulando",1);
+        }
+        else
+        {
+            animacao.SetFloat("pulando", 0);
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        {
+            animacao.SetFloat("andando", 1);
+
+        }
+        else
+        {
+            animacao.SetFloat("andando", 0);
+        }
     }
+
 }

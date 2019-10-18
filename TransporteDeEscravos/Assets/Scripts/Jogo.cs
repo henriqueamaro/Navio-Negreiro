@@ -22,9 +22,13 @@ public class Jogo : MonoBehaviour
     public GameObject Cadeado;
     public float tempoCriacaoCadeado = 5f;
 
+    public GameObject Barril;
+    public float tempoCriacaoBarril = 5f;
+
     private float tempo;
     private float tempo2;
     private float tempo3;
+    private float tempo4;
 
 
 
@@ -65,6 +69,7 @@ public class Jogo : MonoBehaviour
         tempo = Time.time;
         tempo2 = Time.time;
         tempo3 = Time.time;
+        tempo4 = Time.time;
     }
 
     public void AtualizarVida()
@@ -123,6 +128,8 @@ public class Jogo : MonoBehaviour
         CriaCadeado();
 
         CriaAlgema();
+
+        CriaBarril();
     }
 
     void CriaInimigos()
@@ -130,7 +137,7 @@ public class Jogo : MonoBehaviour
         if(Time.time >= tempo + tempoCriacaoInimigo)
         {
             tempo = Time.time;
-            Instantiate(inimigo, new Vector2(12, -1.80f), Quaternion.identity);
+            Instantiate(inimigo, new Vector2(16, -1.80f), Quaternion.identity);
         }
     }
 
@@ -139,7 +146,7 @@ public class Jogo : MonoBehaviour
         if (Time.time >= tempo2 + tempoCriacaoCadeado)
         {
             tempo2 = Time.time;
-            Instantiate(Cadeado, new Vector2(2, -1.95f), Quaternion.identity);
+            Instantiate(Cadeado, new Vector2(22, -1.95f), Quaternion.identity);
         }
     }
 
@@ -148,7 +155,16 @@ public class Jogo : MonoBehaviour
         if (Time.time >= tempo3 + tempoCriacaoAlgema)
         {
             tempo3 = Time.time;
-            Instantiate(Algema, new Vector2(6, -1.70f), Quaternion.identity);
+            Instantiate(Algema, new Vector2(18, -1.70f), Quaternion.identity);
+        }
+    }
+
+    void CriaBarril()
+    {
+        if (Time.time >= tempo4 + tempoCriacaoBarril)
+        {
+            tempo4 = Time.time;
+            Instantiate(Barril, new Vector2(20, -1.75f), Quaternion.identity);
         }
     }
 }
