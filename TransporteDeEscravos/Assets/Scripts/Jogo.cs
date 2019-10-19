@@ -137,7 +137,7 @@ public class Jogo : MonoBehaviour
         if(Time.time >= tempo + tempoCriacaoInimigo)
         {
             tempo = Time.time;
-            Instantiate(inimigo, new Vector2(16, -1.80f), Quaternion.identity);
+            Instantiate(inimigo, new Vector2(16, -2.40f), Quaternion.identity);
         }
     }
 
@@ -146,7 +146,7 @@ public class Jogo : MonoBehaviour
         if (Time.time >= tempo2 + tempoCriacaoCadeado)
         {
             tempo2 = Time.time;
-            Instantiate(Cadeado, new Vector2(22, -1.95f), Quaternion.identity);
+            Instantiate(Cadeado, new Vector2(22, -1.72f), Quaternion.identity);
         }
     }
 
@@ -155,7 +155,7 @@ public class Jogo : MonoBehaviour
         if (Time.time >= tempo3 + tempoCriacaoAlgema)
         {
             tempo3 = Time.time;
-            Instantiate(Algema, new Vector2(18, -1.70f), Quaternion.identity);
+            Instantiate(Algema, new Vector2(18, -2.50f), Quaternion.identity);
         }
     }
 
@@ -164,7 +164,7 @@ public class Jogo : MonoBehaviour
         if (Time.time >= tempo4 + tempoCriacaoBarril)
         {
             tempo4 = Time.time;
-            Instantiate(Barril, new Vector2(20, -1.75f), Quaternion.identity);
+            Instantiate(Barril, new Vector2(10, -1.75f), Quaternion.identity);
         }
     }
 }
